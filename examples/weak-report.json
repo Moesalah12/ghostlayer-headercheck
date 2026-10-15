@@ -1,0 +1,32 @@
+{
+  "finding_count": 5,
+  "findings": [
+    {
+      "rule": "missing_csp",
+      "severity": "medium",
+      "detail": "No enforced CSP observed. Design and test a policy appropriate to the application."
+    },
+    {
+      "rule": "missing_frame_control",
+      "severity": "medium",
+      "detail": "No recognized framing restriction observed; assess clickjacking exposure."
+    },
+    {
+      "rule": "missing_nosniff",
+      "severity": "low",
+      "detail": "Set X-Content-Type-Options: nosniff and correct Content-Type values."
+    },
+    {
+      "rule": "missing_hsts",
+      "severity": "medium",
+      "detail": "No positive HSTS max-age observed; validate HTTPS readiness before enabling."
+    },
+    {
+      "rule": "missing_referrer_policy",
+      "severity": "low",
+      "detail": "Choose an explicit Referrer-Policy suited to the application."
+    }
+  ],
+  "limitations": "Heuristic header review only. No exploit validation or assurance that a policy is effective.",
+  "status_code": null
+}
